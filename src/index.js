@@ -51,13 +51,6 @@ function resize()
     gl.viewport(0, 0, canvas.width, canvas.height);
 }
 
-window.onload = () => {
-
-    requestAnimationFrame(main);
-};
-
-
-
 function createShader(gl, type, source) {
     const shader = gl.createShader(type);
     gl.shaderSource(shader, source);
